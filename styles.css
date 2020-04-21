@@ -27,7 +27,7 @@ body{
   top: 50px;
   left: 0;
   padding-top: 10px;
-  max-width: 65%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -55,12 +55,11 @@ body{
 
 .info{
   position: relative;
-  max-width: 60%;
-  padding-right: 30px;
+  max-width: 100%;
   top: 200px;
-  left: 5px;
-  font-size: 11px;
   text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .button{
