@@ -1,15 +1,18 @@
-body{
+body {
   font-size: 16px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   background-color: #fff5f5;
   color: #ce9797;
 }
+
 p {
   line-height: 1.6;
 }
+
+
 /* Logo */
-.logo{
+.logo {
   position: relative;
   top: 15px;
   left: 10px;
@@ -18,7 +21,7 @@ p {
 }
 
 /* Lady image */
-.lady{
+.lady-image {
   position: absolute;
   top: 50px;
   left: 0;
@@ -27,8 +30,12 @@ p {
   height: auto;
 }
 
+.lady-image2 {
+  display: none;
+}
+
 /* Heading */
-h1{
+h1 {
   position: relative;
   top: 300px;
   max-width: 100%;
@@ -40,61 +47,212 @@ h1{
   letter-spacing: 10px;
   font-size: 40px;
 }
+
 .coming-soon {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   color: #413a3a;
   margin-top: 0;
 }
- /* Info text */
- .info{
-   position: relative;
-   max-width: 100%;
-   top: 300px;
-   text-align: center;
-   margin-right: 24px;
-   margin-left: 24px;
-   font-size: 14px;
- }
- /* Email button */
- form{
+
+/* Info text */
+.info {
+  position: relative;
+  max-width: 100%;
+  top: 300px;
+  text-align: center;
+  margin-right: 24px;
+  margin-left: 24px;
+  font-size: 14px;
+}
+
+/* Email button */
+form {
   position: relative;
   top: 310px;
   left: 30px;
-  border: 1px solid #cfcfcf;
+}
+
+input {
+  /* border: 1px solid #cfcfcf; */
   border-radius: 30px;
   cursor: pointer;
-  padding: 8px;
-  max-width: 75%;
-}
-input{
-  border: none;
   color: #ce9797;
-  padding: 7px;
-  width: 250px;
+  padding: 15px;
   background-color: #fff5f5;
+  width: 73%;
 }
+
+input:focus {
+  outline: none;
+}
+
+input[type='email'] {
+  font-size: 16px;
+}
+
 .email {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
+  border: 2px solid #cfcfcf;
 }
+
+.arrow:hover {
+  background-image: linear-gradient(135deg, #fff5f5, #ce9797);
+}
+
 .arrow {
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   position: relative;
-  top: 265px;
-  left: 255px;
+  top: 260px;
+  margin-left: 270px;
   border-radius: 30px;
   width: 10px;
   height: auto;
-  padding: 11px 26px;
+  padding: 14px 34px;
 }
+
+::placeholder {
+  color: #ce9797;
+  opacity: 0.5;
+}
+
+/* Error - add a red highlight around the input for the warning */
+.error-message {
+  color: #ce9797;
+  position: relative;
+  top: 260px;
+  margin-left: 53px;
+  font-size: 10px;
+}
+
+.error-icon {
+  position: relative;
+  top: 186px;
+  margin-left: 240px;
+  height: 10px;
+  width: 10px;
+}
+
+.error-border {
+  border: 2px solid #f96262;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.hide {
+  display: none;
+}
+
 /* Footer */
 .attribution {
-  font-size: 9px;
+  width: 260px;
+  height: 20px;
   text-align: center;
-  position: relative;
-  top: 280px;
+  margin-top: 280px;
+  margin-left: 50px;
+  font-size: 11px;
 }
+
+
 .attribution a {
-   color: hsl(228, 45%, 44%);
- }
+  color: hsl(228, 45%, 44%);
+}
+
+/* For desktops */
+@media only screen and (min-width: 768px) {
+  body {
+    width: 1400px;
+    height: 740px;
+  }
+
+  .lady-image {
+    display: none;
+  }
+
+  .lady-image2 {
+    display: block;
+    position: absolute;
+    left: 58%;
+    bottom: 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: 8%;
+    left: 12%;
+    height: auto;
+    width: 12%;
+  }
+
+  /* Heading */
+  h1 {
+    top: 200px;
+    margin-left: 165px;
+    max-width: 40%;
+    text-align: left;
+    letter-spacing: 20px;
+    font-size: 70px;
+  }
+
+  /* Info text */
+  .info {
+    max-width: 30%;
+    top: 210px;
+    margin-left: 165px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  /* Email button */
+  form {
+    position: relative;
+    top: 230px;
+    margin-left: 133px;
+  }
+
+  input {
+    padding: 19px;
+    width: 28%;
+  }
+
+  .arrow {
+    top: 171px;
+    margin-left: 480px;
+    width: 10px;
+    height: auto;
+    padding: 19px 50px;
+  }
+
+  ::placeholder {
+    font-size: 16px;
+  }
+
+  /* error */
+  .error-message {
+    top: 170px;
+    margin-left: 180px;
+    font-size: 13px;
+  }
+
+  .error-icon {
+    top: 82px;
+    margin-left: 220px;
+    height: 10px;
+    width: 10px;
+  }
+
+  /* Footer */
+  .attribution {
+    position: fixed;
+    width: 223px;
+    text-align: center;
+    margin-top: 450px;
+    margin-left: 170px;
+  }
+
+  footer {
+    height: 50px;
+    margin-top: 240px;
+  }
+}
