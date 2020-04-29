@@ -4,6 +4,7 @@ body {
   font-weight: 400;
   background-color: #fff5f5;
   color: #ce9797;
+  width: 300px;
 }
 
 p {
@@ -26,8 +27,7 @@ p {
   top: 50px;
   left: 0;
   padding-top: 10px;
-  max-width: 100%;
-  height: auto;
+
 }
 
 .lady-image2 {
@@ -46,6 +46,7 @@ h1 {
   margin-top: 40px;
   letter-spacing: 10px;
   font-size: 40px;
+  margin-left: 65px;
 }
 
 .coming-soon {
@@ -58,11 +59,10 @@ h1 {
 /* Info text */
 .info {
   position: relative;
-  max-width: 100%;
+  width: 300px;
   top: 300px;
   text-align: center;
-  margin-right: 24px;
-  margin-left: 24px;
+  margin-left: 30px;
   font-size: 14px;
 }
 
@@ -70,7 +70,7 @@ h1 {
 form {
   position: relative;
   top: 310px;
-  left: 22px;
+  left: 30px;
 }
 
 input {
@@ -80,7 +80,7 @@ input {
   color: #ce9797;
   padding: 15px;
   background-color: #fff5f5;
-  width: 73%;
+  width: 82%;
 }
 
 input:focus {
@@ -105,7 +105,7 @@ input[type='email'] {
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   position: relative;
   top: 260px;
-  margin-left: 240px;
+  margin-left: 260px;
   border-radius: 30px;
   width: 10px;
   height: auto;
@@ -122,14 +122,14 @@ input[type='email'] {
   color: #ce9797;
   position: relative;
   top: 260px;
-  margin-left: 50px;
+  margin-left: 53px;
   font-size: 10px;
 }
 
 .error-icon {
   position: relative;
   top: 186px;
-  margin-left: 200px;
+  margin-left: 240px;
   height: 10px;
   width: 10px;
 }
@@ -150,7 +150,7 @@ input[type='email'] {
   height: 20px;
   text-align: center;
   margin-top: 280px;
-  margin-left: 45px;
+  margin-left: 50px;
   font-size: 11px;
 }
 
