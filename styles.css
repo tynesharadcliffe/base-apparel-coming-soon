@@ -243,16 +243,8 @@ input[type='email'] {
   }
 
   /* Footer */
-  .attribution {
-    position: fixed;
-    width: 223px;
-    text-align: center;
-    margin-top: 450px;
-    margin-left: 170px;
-  }
-
-  footer {
-    height: 50px;
-    margin-top: 240px;
+  .attribution{
+    margin-top: 200px;
+    margin-left: 175px;
   }
 }
